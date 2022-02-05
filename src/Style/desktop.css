@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+}
+
+form {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
