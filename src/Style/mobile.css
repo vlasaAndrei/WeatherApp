@@ -1,0 +1,161 @@
+@media (max-width: 821px) and (min-width: 398px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: 10vh 45vh 40vh 50vh;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  #search {
+    width: 75%;
+  }
+
+  .current-info {
+    grid-template-rows: 10% 30% 30% 30%;
+
+    grid-template-areas:
+      '. . time time'
+      'city city . .'
+      'temp temp temp temp'
+      'info info info info';
+  }
+
+  .city {
+    font-size: 2rem;
+  }
+
+  .temperature {
+    font-size: 1.2rem;
+    margin-top: -12%;
+  }
+  .feels {
+    font-size: 1rem;
+  }
+
+  .date-time {
+    font-size: 1rem;
+  }
+
+  .weather-description {
+    font-size: 1rem;
+  }
+  .weather-title {
+    font-size: 1.2rem;
+  }
+
+  .main-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .info-column-1,
+  .info-column-2 {
+    font-size: 0.9rem;
+  }
+
+  .info-column-1 {
+    border-right: 1px solid black;
+    padding-right: 10px;
+  }
+
+  .forecast-hourly {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .forecast-daily {
+    overflow-x: scroll;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  footer {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 395px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: 10vh 60vh 50vh 60vh;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  #search {
+    width: 75%;
+  }
+
+  .current-info {
+    grid-template-rows: 10% 30% 30% 30%;
+
+    grid-template-areas:
+      '. . time time'
+      'city city . .'
+      'temp temp temp temp'
+      'info info info info';
+  }
+
+  .city {
+    font-size: 2rem;
+  }
+
+  .temperature {
+    font-size: 1.2rem;
+    margin-top: -12%;
+  }
+  .feels {
+    font-size: 1rem;
+  }
+
+  .date-time {
+    font-size: 1rem;
+  }
+
+  .weather-description {
+    font-size: 1rem;
+  }
+  .weather-title {
+    font-size: 1.2rem;
+  }
+
+  .main-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .info-column-1,
+  .info-column-2 {
+    font-size: 0.9rem;
+  }
+
+  .info-column-1 {
+    border-right: 1px solid black;
+    padding-right: 10px;
+  }
+
+  .forecast-hourly {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .forecast-daily {
+    overflow-x: scroll;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  footer {
+    width: 100vw;
+  }
+}

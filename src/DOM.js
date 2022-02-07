@@ -140,7 +140,7 @@ export function displayDaily(weather) {
     }
   }
 
-  weather.daily.forEach((day, i) => {
+  weather.daily.forEach((day) => {
     //Create the DOM for each card with the daily forecast
     const card = document.createElement('div');
     const weekday = document.createElement('div');
