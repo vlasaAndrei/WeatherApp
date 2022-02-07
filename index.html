@@ -8,42 +8,54 @@
     <title>Weather by Andrei</title>
 </head>
 <body>
-    <form action="" name="Enter your location" id="form">
-        <input type="search" id="search" aria-label="Enter the location you want the weather for." placeholder="Enter a city name">
-        <div class="left-info">
-            <div class="city"></div>
-            <div class="date-time">
-                <div class="time"></div>
-                <div class="day"></div>
-                <div class="d-m-y"></div>
+    <form action="" name="Enter your location." id="form">
+        <input type="search" id="search" aria-label="Enter the location you want the weather for." placeholder="Enter a city name, a state or a city state">
+    </form>
+    <div class="current-info">
+        <div class="city"></div>
+        <div class="date-time">
+            <div class="d-m-y"></div>
+            <div class="time-div">
+            <div class="time"></div>
+            <div class="day"></div>
+        </div>
+        </div>
+        <div class="weather-info">
+            <div class="temperature">
+                <div class="temp"></div>
+                <div class="feels"></div>
             </div>
-            <div class="main-weather-info">
+            <div class="weather-description">
                 <img src="" alt="Weather-icon" class="main-icon">
                 <div class="weather-title"></div>
                 <div class="weather-desc"></div>
-                <div class="temp"></div>
-                <div class="feels"></div>
-                <div class="humidity"></div>
-                <div class="clouds"></div>
-
             </div>
         </div>
         <div class="right-info">
-            <div class="sunrise"></div>
-            <div class="sunset"></div>
-            <div class="pressure"></div>
-            <div class="uvi"></div>
-            <div class="visibility"></div>
-            <div class="clouds"></div>
-            <div class="wind-speed"></div>
-            
-    
+            <div class="info-column-1">
+                <div class="humidity"></div>
+                <div class="clouds"></div>
+                <div class="sunrise"></div>
+                <div class="sunset"></div>
+            </div>
+            <div class="info-column-2">
+                <div class="pressure"></div>
+                <div class="uvi"></div>
+                <div class="visibility"></div>
+                <div class="wind-speed"></div>
+            </div>
         </div>
-        <div class="forecast-hourly">
 
-        </div>
-        
-    </form>
+    </div>
+    <div class="forecast-hourly"></div>
+
+    <div class="daily7">
+    <div class="separator">Next 7 days forecast:</div>
+    <div class="forecast-daily"></div>
+    
+</div>
+
+<footer>Created by Andrei Vlasa for The Odin Project</footer> 
 
 
 
