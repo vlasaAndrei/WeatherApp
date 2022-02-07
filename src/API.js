@@ -2,7 +2,9 @@
 
 export async function getLocation(city) {
   try {
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=0ceca601b6ec492c48f648a360a26e03`);
+    const response = await fetch(
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=0ceca601b6ec492c48f648a360a26e03`
+    );
     const format = await response.json();
     const longitude = format[0].lon;
     const latitude = format[0].lat;
