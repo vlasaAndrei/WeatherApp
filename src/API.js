@@ -1,7 +1,10 @@
 //Gets the user input and if it is a valid city it returns the longitude and latitude of the city
 
 export async function getLocation(city) {
-  const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=0ceca601b6ec492c48f648a360a26e03`);
+  const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=0ceca601b6ec492c48f648a360a26e03`, {
+    mode: 'cors'
+  });
+
   const format = await response.json();
   const longitude = format[0].lon;
   const latitude = format[0].lat;
@@ -11,7 +14,8 @@ export async function getLocation(city) {
 export async function getWeather(lon, lat) {
   try {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely&units=metric&appid=0ceca601b6ec492c48f648a360a26e03`
+      `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely&units=metric&appid=0ceca601b6ec492c48f648a360a26e03`,
+      { mode: 'cors' }
     );
 
     const format = await response.json();
